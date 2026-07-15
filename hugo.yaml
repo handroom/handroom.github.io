@@ -10,21 +10,46 @@ pagination:
   pagerSize: 10
 
 params:
+  description: "퇴근 후에 만드는 것들. 개발 기록."
   defaultTheme: auto
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   ShowToc: false
   ShowShareButtons: false
   ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
   hideFooter: false
   DateFormat: "2006-01-02"
 
+  label:
+    text: "HandRoom"
+    icon: /favicon.svg
+    iconHeight: 20
+
+  assets:
+    favicon: /favicon.svg
+    apple_touch_icon: /favicon.svg
+    safari_pinned_tab: /favicon.svg
+
   homeInfoParams:
-    Title: HandRoom
-    Content: 퇴근 후에 만드는 것들. 개발 기록.
+    Title: "HandRoom ✋"
+    Content: >-
+      퇴근 후에 만드는 것들.
+
+      게임을 만드는 중이다. 처음 만든다. AI랑 같이 만든다.
+
+      잘 된 것보다 안 된 걸 기록한다. 그게 더 많아서.
+
+  socialIcons:
+    - name: github
+      url: https://github.com/handroom
+    - name: rss
+      url: /index.xml
 
 outputs:
-  home: [HTML, RSS]
+  home: [HTML, RSS, JSON]
 
 menu:
   main:
@@ -36,6 +61,18 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
 
 markup:
   highlight:
