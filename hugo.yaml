@@ -1,0 +1,46 @@
+baseURL: https://handroom.github.io/
+languageCode: ko-kr
+title: HandRoom
+theme: PaperMod
+timeZone: Asia/Seoul
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+params:
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowToc: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  hideFooter: false
+  DateFormat: "2006-01-02"
+
+  homeInfoParams:
+    Title: HandRoom
+    Content: 퇴근 후에 만드는 것들. 개발 기록.
+
+outputs:
+  home: [HTML, RSS]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+
+markup:
+  highlight:
+    style: monokai
+    noClasses: true
+  goldmark:
+    renderer:
+      unsafe: false
