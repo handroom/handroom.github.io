@@ -51,12 +51,20 @@ params:
 outputs:
   home: [HTML, RSS, JSON]
 
+taxonomies:
+  category: categories
+  tag: tags
+
 menu:
   main:
     - identifier: posts
       name: Posts
       url: /posts/
       weight: 10
+    - identifier: categories
+      name: 프로젝트
+      url: /categories/
+      weight: 15
     - identifier: tags
       name: Tags
       url: /tags/
