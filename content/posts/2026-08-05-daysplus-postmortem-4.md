@@ -1,6 +1,6 @@
 ---
 title: "출시는 기술 문제가 아니었다"
-date: 2026-08-05T00:29:55+09:00
+date: 2026-08-05T00:20:01+09:00
 slug: daysplus-postmortem-4
 categories: ["Days+"]
 tags: ["부검", "출시", "심사", "정책", "fastlane"]

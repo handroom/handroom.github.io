@@ -1,6 +1,6 @@
 ---
 title: "애드몹 인출 기준도 못 넘었다"
-date: 2026-08-03T00:47:05+09:00
+date: 2026-08-03T01:36:45+09:00
 slug: daysplus-postmortem-1
 categories: ["Days+"]
 tags: ["부검", "수익화", "광고", "리텐션", "ASO"]

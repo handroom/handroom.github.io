@@ -1,0 +1,31 @@
+{{- /*
+  PaperMod 기본 post_meta 오버라이드.
+
+  기본형은 "날짜 · 7 min" 처럼 발행일 옆에 읽는 시간을 붙여서, 그 숫자가
+  발행 시각으로 읽힌다. 그래서 둘을 분리한다.
+    1줄: 발행일 + 시각
+    2줄: 읽는 데 N분  (별도 블록, 흐린 글씨)
+*/ -}}
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+    {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+    {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "words" .WordCount | default (printf "%d words" .WordCount)))) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+    {{- with (partial "author.html" .) }}
+        {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" .)) }}
+    {{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+    {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}
+
+{{- if (.Param "ShowReadingTime") -}}
+    <div class="read-time">읽는 데 {{ .ReadingTime }}분</div>
+{{- end }}
