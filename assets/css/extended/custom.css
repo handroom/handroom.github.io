@@ -33,3 +33,54 @@ body {
 .home-info .entry-content {
     line-height: 1.9;
 }
+
+/* ─────────────────────────────────────────────
+   아이콘
+   본문 이모지는 안 쓴다(톤앤매너 §3-6). 대신 이 아이콘을 의미 단위로만 붙인다.
+   장식으로 뿌리면 수치의 신뢰도를 깎는다.
+   ───────────────────────────────────────────── */
+
+/* 문장·제목에 섞이는 인라인 아이콘 */
+.post-content img[src*="/img/icons/"],
+.home-info img[src*="/img/icons/"],
+.entry-content img[src*="/img/icons/"] {
+    display: inline-block;
+    height: 1.25em;
+    width: auto;
+    margin: 0 0.15em;
+    vertical-align: -0.22em;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* 섹션 제목에 붙는 건 조금 크게, 뒤에 여백 */
+.post-content h2 img[src*="/img/icons/"],
+.post-content h3 img[src*="/img/icons/"] {
+    height: 1.1em;
+    margin-inline-end: 0.32em;
+    vertical-align: -0.14em;
+}
+
+/* 표 안 — 숫자 옆자리 */
+.post-content td img[src*="/img/icons/"],
+.post-content th img[src*="/img/icons/"] {
+    height: 1.1em;
+    vertical-align: -0.18em;
+}
+
+/* 목록 앞에 와도 줄 간격을 밀지 않게 */
+.post-content li img[src*="/img/icons/"] {
+    vertical-align: -0.2em;
+}
+
+/* 도입부 요약 인용 안의 표 — 수치를 담는 자리라 테두리를 지운다 */
+.post-content blockquote table {
+    margin: 0.4em 0 0;
+    background: transparent;
+}
+
+.post-content blockquote table td,
+.post-content blockquote table th {
+    border: none;
+    padding: 0.25em 0.7em 0.25em 0;
+}

@@ -18,9 +18,9 @@ comments: false
 
 ---
 
-## 만든 것
+## ![](/img/icons/chest.png) 만든 것
 
-### Days+ — 디데이 위젯
+### ![](/img/icons/time.png) Days+ — 디데이 위젯
 
 기념일을 세는 앱. 2026년 4월에 냈다. 홈 화면 위젯, 포토월, 감성 패턴 50가지, 할 일과 한 줄 일기.
 
@@ -31,10 +31,10 @@ comments: false
 [![App Store](/img/appstore-badge.png)](https://apps.apple.com/app/id6762467598)
 [![Google Play](/img/googleplay-badge.png)](https://play.google.com/store/apps/details?id=com.handroom.daysplus)
 
-### 게임 (개발 중)
+### ![](/img/icons/hammer.png) 게임 (개발 중)
 
 처음 만드는 게임. 아직 안 냈다. 만드는 과정은 [게임](/categories/%EA%B2%8C%EC%9E%84/) 분류에 쌓고 있다.
 
 ---
 
-문의: [support@handroom.kr](mailto:support@handroom.kr)
+![](/img/icons/mail.png) 문의: [support@handroom.kr](mailto:support@handroom.kr)
