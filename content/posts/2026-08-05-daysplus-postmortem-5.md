@@ -1,5 +1,5 @@
 ---
-title: "광고 미디에이션에 사흘을 썼는데, 범인은 오타가 아니었다"
+title: "광고가 안 나온 건 내가 걸어둔 하한선 때문이었다"
 date: 2026-08-05T08:40:00+09:00
 slug: daysplus-postmortem-5
 categories: ["Days+"]

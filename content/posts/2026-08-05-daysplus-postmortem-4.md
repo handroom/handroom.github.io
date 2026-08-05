@@ -1,5 +1,5 @@
 ---
-title: "출시는 기술 문제가 아니었다"
+title: "코드는 1월에 끝났고 출시는 4월이었다"
 date: 2026-08-05T08:30:00+09:00
 slug: daysplus-postmortem-4
 categories: ["Days+"]

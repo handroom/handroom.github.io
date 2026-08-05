@@ -1,5 +1,5 @@
 ---
-title: "디데이 앱을 정한 대화가 없다"
+title: "앱 이름보다 광고를 먼저 물었다"
 date: 2026-08-05T08:10:00+09:00
 slug: daysplus-postmortem-2
 categories: ["Days+"]

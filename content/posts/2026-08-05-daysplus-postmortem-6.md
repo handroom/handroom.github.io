@@ -1,5 +1,5 @@
 ---
-title: "뒤늦게 ASO를 했다"
+title: "스토어 키워드를 출시 104일 뒤에 고쳤다"
 date: 2026-08-05T08:45:00+09:00
 slug: daysplus-postmortem-6
 categories: ["Days+"]

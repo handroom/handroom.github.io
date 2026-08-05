@@ -1,5 +1,5 @@
 ---
-title: "그래서 다음 프로젝트는 다르게 한다"
+title: "다음 게임은 D1이 35%를 못 넘으면 접는다"
 date: 2026-08-05T08:50:00+09:00
 slug: daysplus-postmortem-7
 categories: ["Days+"]
